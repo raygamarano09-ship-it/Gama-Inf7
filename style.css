@@ -9,8 +9,9 @@ body {
 }
 
 .tamanho{
-    width: 100%;
+    max-width: 1200px;
     min-height: 100vh;
+    margin: 0 60px;
 }
 
 /* CABEÇALHO */
@@ -41,7 +42,7 @@ ul {
     flex-direction: row;
 }
 
-ul li a {
+.space-list{
     padding: 10px;
 }
 
@@ -49,11 +50,12 @@ ul li a {
 
 #inicio {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .introduçao {
-    padding: 20px;
+    padding: 15%;
     display: flex;
     flex-direction: column;
 }
@@ -72,8 +74,8 @@ ul li a {
 
 .card {
     background-color: rgba(0, 0, 0, 0.452);
-    width: 260px;
-    height: 400px;
+    width: 60%;
+    height: 65%;
     border-radius: 15px;
 }
 
@@ -83,9 +85,9 @@ ul li a {
 
 .img-intro img {
     padding: 20px 10px 0;
-    width: 240px;
-    height: 240px;
-    border-radius: 50px;
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
 }
 
 /* CONTEN-SECUNDARIO */
