@@ -14,6 +14,9 @@ body {
     margin: 0 60px;
 }
 
+a {
+    text-decoration: none;
+}
 /* CABEÇALHO */
 
 #cabeçalho {
@@ -22,9 +25,6 @@ body {
     gap: 50px;
 }
 
-a {
-    text-decoration: none;
-}
 
 header {
     display: flex;
@@ -40,10 +40,15 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
-
+.style-list{
+    background-color: rgb(10, 66, 5);
+    border-radius: 5px;
+}
 .space-list{
-    padding: 10px;
+    color: white;
+    margin: 10px;
 }
 
 /* INÍCIO */
@@ -73,29 +78,40 @@ ul {
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0.452);
-    width: 60%;
-    height: 65%;
-    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(4, 53, 0);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5%;
+}
+
+.card-img{
+    width: 100%;
+    height: 90%;
+    background-color: rgb(132, 179, 128);
+    border-radius: 10px;
+    padding: 10px;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
 
 .card p {
+    color: white;
     padding: 10px;
-}
-
-.img-intro img {
-    padding: 20px 10px 0;
-    width: 100%;
-    height: 60%;
-    border-radius: 20px;
 }
 
 /* CONTEN-SECUNDARIO */
 
-.cont-secundario{
+#cont-secundario{
     background-color: rgba(0, 0, 0, 0.233);
 }
-.cont-secundario h2{
+#cont-secundario h2{
     padding-bottom: 30px;
 }
 
